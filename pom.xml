@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>LearnStreams</name>
+    <description>A collection of ImageJ commands and ops to refresh/expand our stream knowledge</description>
+    <url>https://github.com:alessandrofelder/learnstreams/</url>
+    <inceptionYear>2020</inceptionYear>
+    <organization>
+        <name>UCL Research Software Development Group</name>
+        <url>https://www.ucl.ac.uk/research-it-services/services/research-software-development</url>
+    </organization>
+
+    <groupId>org.example</groupId>
+    <artifactId>LearnStreams</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>org.scijava</groupId>
+        <artifactId>pom-scijava</artifactId>
+        <version>28.0.0</version>
+        <relativePath />
+    </parent>
+
+    <developers>
+        <developer>
+            <id>stefpiatek</id>
+            <name>Stefan Piatek</name>
+            <url>https://github.com/stefpiatek/</url>
+            <roles>
+                <role>founder</role>
+                <role>lead</role>
+                <role>developer</role>
+                <role>debugger</role>
+                <role>reviewer</role>
+                <role>support</role>
+                <role>maintainer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>alessandrofelder</id>
+            <name>Alessandro Felder</name>
+            <url>https://github.com/alessandrofelder/</url>
+            <roles>
+                <role>founder</role>
+                <role>lead</role>
+                <role>developer</role>
+                <role>debugger</role>
+                <role>reviewer</role>
+                <role>support</role>
+                <role>maintainer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <contributors>
+        <contributor>
+            <name>None</name>
+        </contributor>
+    </contributors>
+
+    <licenses>
+        <license>
+            <name>Simplified BSD License</name>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <repositories>
+        <repository>
+            <id>imagej.public</id>
+            <url>http://maven.imagej.net/content/groups/public</url>
+        </repository>
+    </repositories>
+
+    <mailingLists>
+        <mailingList>
+            <name>ImageJ Forum</name>
+            <archive>http://forum.imagej.net/</archive>
+        </mailingList>
+    </mailingLists>
+
+    <properties>
+        <package-name>learnstreams</package-name>
+        <main-class>None</main-class>
+        <license.licenseName>bsd_2</license.licenseName>
+        <license.copyrightOwners>Stef Piatek, Alessandro Felder</license.copyrightOwners>
+    </properties>
+
+    <scm>
+        <connection>scm:git:git://github.com/alessandrofelder/learn-streams</connection>
+        <developerConnection>scm:git:git@github.com:learn-streams</developerConnection>
+        <tag>HEAD</tag>
+        <url>github.com:alessandrofelder:learn-streams</url>
+    </scm>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url> https://github.com:alessandrofelder/learn-streams/issues</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>None</system>
+    </ciManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.imagej</groupId>
+            <artifactId>imagej</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

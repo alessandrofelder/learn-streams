@@ -6,6 +6,7 @@ import net.imagej.ImgPlus;
 import net.imagej.ops.OpService;
 import net.imglib2.img.Img;
 import net.imglib2.type.numeric.RealType;
+import net.imglib2.type.numeric.real.DoubleType;
 import org.scijava.ItemIO;
 import org.scijava.command.Command;
 import org.scijava.command.ContextCommand;
@@ -22,15 +23,13 @@ public class ExampleLearnStreamCommand<T extends RealType> extends ContextComman
     @Parameter
     private ImgPlus<T> inputImgPlus;
 
-    @Parameter
-    private double radius;
-
     @Parameter(type= ItemIO.OUTPUT)
-    private ImgPlus<T> outputImgPlus;
+    private double meanGreyScaleValue;
 
     @Override
     public void run() {
-        outputImgPlus = new ImgPlus<T>((Img) opService.filter().gauss(inputImgPlus.getImg(), radius), inputImgPlus.getName()+"(filtered)");
+        DoubleType mean = (DoubleType) opService.run(ComputeMeanGreyScaleOp.class, inputImgPlus.getImg());
+        meanGreyScaleValue = mean.getRealDouble();
     }
 
     /**
